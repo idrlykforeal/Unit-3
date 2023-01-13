@@ -1,35 +1,39 @@
-# code of function
+# code of class
 ```.py
-def to_roman(num:int):
-    out=""
-    roman= {100:'C', 90:'XC', 50:'L', 40:'XL', 10:'X', 9:'IX', 5:'V', 4:'IV', 1:'I'}
-    if num < 1 or num >100:
-        raise ValueError("Number must be between 1 and 100")
-    if not isinstance(num,int):
-        raise TypeError("Number must be an integer")
-    while num>0:
-        for i in roman.keys():
-            if num>=i:
-                out+=roman[i]
-                num-=i
-                break
-    return out
+class quiz34:
+    def __init__(self, num:int):
+        self.num = num
+    def solve(self):
+        out=""
+        roman= {100:'C', 90:'XC', 50:'L', 40:'XL', 10:'X', 9:'IX', 5:'V', 4:'IV', 1:'I'}
+        if self.num < 1 or self.num >100:
+            raise ValueError("Number must be between 1 and 100")
+        if not isinstance(self.num,int):
+            raise TypeError("Number must be an integer")
+        while self.num>0:
+            for i in roman.keys():
+                if self.num>=i:
+                    out+=roman[i]
+                    self.num-=i
+                    break
+        return out
 ```
 # test code
 ```.py
 import pytest
-from quiz_034 import to_roman
+from quiz_034 import quiz34
 
 def test_5():
-    assert to_roman(5) == 'V'
+    assert quiz34(5).solve() == 'V'
+
 def test_not_int():
     with pytest.raises(TypeError):
-        to_roman("a")
+        assert quiz34("a").solve()
 def test_out_of_range():
     with pytest.raises(ValueError):
-        to_roman(101)
+        assert quiz34(101).solve()
 def test_37():
-    assert to_roman(37) == 'XXXVII'
+    assert quiz34(37).solve() == 'XXXVII'
 ```
 
 # test results
