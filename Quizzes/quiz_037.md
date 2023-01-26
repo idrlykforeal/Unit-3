@@ -38,3 +38,5 @@ class AccountingProgram:
 # Test
 <img width="686" alt="quiz_037" src="https://user-images.githubusercontent.com/100017195/213068725-11752a64-362b-4455-ad11-e4b0d436f2ea.png">
 
+# UML
+![37](https://user-images.githubusercontent.com/100017195/214856372-964cd57a-6c86-41f6-a4cf-3b6dc7bb81d5.jpg)
