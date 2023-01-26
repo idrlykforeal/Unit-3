@@ -65,3 +65,6 @@ plt.show()
 # graph plotted
 
 <img width="455" alt="Screen Shot 2023-01-26 at 8 07 43 AM" src="https://user-images.githubusercontent.com/100017195/214712325-49ae0c6c-5a1c-4fba-a101-3917e7708c1c.png">
+
+# UML 
+![IMG_0580](https://user-images.githubusercontent.com/100017195/214857738-abede4a9-4882-4171-9f51-f55758f7fb80.jpg)
