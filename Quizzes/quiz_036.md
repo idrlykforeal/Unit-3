@@ -89,3 +89,5 @@ def test_classroom():
 # Test result
 <img width="790" alt="Screen Shot 2023-01-26 at 9 58 10 PM" src="https://user-images.githubusercontent.com/100017195/214843755-9d5f7ace-becf-4a7d-9804-b6ad7e8f36c4.png">
 
+# UML
+![36](https://user-images.githubusercontent.com/100017195/214856232-b8c15f75-e3f3-402e-be09-fb960e7f15aa.jpg)
