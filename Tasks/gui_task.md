@@ -33,7 +33,7 @@ converter=currency_converter()
 converter.run()
 ```
 ### kv
-```.py
+```.kv
 #GUI Building Task 1 - KivyMD
 Screen:
     size: 500,500
@@ -117,7 +117,7 @@ Screen:
 
 ```
 ### kv
-```.py
+```.kv
 
 ```
 
