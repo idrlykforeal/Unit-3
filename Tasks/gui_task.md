@@ -54,7 +54,7 @@ Screen:
             id: input_amount
             hint_text: "Enter Amount in CNY"
             pos_hint: {'center_x':0.5}
-            size_hint: .7, .1
+            size_hint: .7, .2
             on_text:
 
                 app.set_cny_amount()
@@ -105,7 +105,8 @@ Screen:
 
 ## Showcase
 
-<img width="912" alt="Screen Shot 2023-01-29 at 10 07 00 PM" src="https://user-images.githubusercontent.com/100017195/215328126-faedcd66-18ba-44eb-833c-48f1e8bd8cb0.png">
+<img width="912" alt="Screen Shot 2023-01-29 at 10 17 41 PM" src="https://user-images.githubusercontent.com/100017195/215328838-b59c3c36-093c-43ab-bf4c-525a45c78066.png">
+
 
 
 # Task 2: Bit-Byte converter
