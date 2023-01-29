@@ -106,7 +106,8 @@ Screen:
 ## Showcase
 
 <img width="912" alt="Screen Shot 2023-01-29 at 10 17 41 PM" src="https://user-images.githubusercontent.com/100017195/215328838-b59c3c36-093c-43ab-bf4c-525a45c78066.png">
-
+<img width="912" alt="Screen Shot 2023-01-29 at 10 19 03 PM" src="https://user-images.githubusercontent.com/100017195/215328910-c138461f-0c59-42ee-94cb-fcd30b1bc7d8.png">
+<img width="912" alt="Screen Shot 2023-01-29 at 10 19 18 PM" src="https://user-images.githubusercontent.com/100017195/215328925-c4b5f39d-ee07-49ae-9efd-8ead63b246d2.png">
 
 
 # Task 2: Bit-Byte converter
