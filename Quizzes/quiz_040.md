@@ -49,6 +49,10 @@ Screen:
 ```
 
 # showcase
-<img width="912" alt="image" src="https://user-images.githubusercontent.com/100017195/216500421-1799a79c-298f-4c2e-92cd-55924577441e.png">
 
+
+https://user-images.githubusercontent.com/100017195/217508201-f75d92ed-9143-4b86-80dc-83aed235ac8f.mov
+
+
+<img width="912" alt="image" src="https://user-images.githubusercontent.com/100017195/216500421-1799a79c-298f-4c2e-92cd-55924577441e.png">
 <img width="912" alt="image" src="https://user-images.githubusercontent.com/100017195/216500352-9a39c823-d7f2-4d81-b195-1e5ba673661c.png">
