@@ -47,9 +47,6 @@ Screen:
 
 # evidence
 
-<img width="790" alt="Screen Shot 2023-01-26 at 10 36 24 AM" src="https://user-images.githubusercontent.com/100017195/214736725-12700f8d-2a42-4bba-9c5c-33c53a489ada.png">
-
-
-<img width="790" alt="Screen Shot 2023-01-26 at 10 36 28 AM" src="https://user-images.githubusercontent.com/100017195/214736700-0a4aeda5-38ee-4aeb-843d-e47470a26f33.png">
+https://user-images.githubusercontent.com/100017195/217510732-a6f232d1-21a3-49df-bc7a-76d699429319.mov
 
 
