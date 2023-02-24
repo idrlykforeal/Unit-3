@@ -3,10 +3,24 @@
 ## Criteria A: Planning
 
 ## Problem definition(Client identification)
-
-
+Sofi is planning to open an elite candy shop and is in need of a professional inventory management platform. The platform must be secure and allow multiple worker accounts to update the candy inventory. Additionally, the platform should include the functionality to view charts that display portions of candies from different companies.
 
 ## Proposed Solution
+To address the needs of Sofi's elite candy shop, we propose developing a mobile application that serves as an inventory management platform for the business. The application will provide the following features:
+
+Organized Database: The application will have a well-organized database that stores information about the candies available in the shop. This database will allow Sofi and her team to easily add, delete, and update information about candies in a structured and organized way.
+
+User Accounts: The application will allow for secure user account registration and login. Each user account will have a unique username and password, and users will only be able to access the features and functions of the application that correspond to their account type.
+
+User Roles: Different users of the application will have different roles and permissions. Sofi will be the administrator of the application and have full access to all its features, while her employees will have limited access to only the functions they need to perform their tasks.
+
+Password Security: The application will use advanced password security measures to protect user data. User passwords will be hashed and salted to prevent unauthorized access.
+
+Login History: The application will have a feature to track login history for each user account, making it easier to identify and respond to any unauthorized access attempts.
+
+Action Logs: The application will keep logs of actions taken by each user account. This will enable Sofi to track inventory changes and any other actions taken within the application.
+
+Expiration Management: The application will provide tools to manage expiration dates for candies. This feature will allow Sofi and her employees to dispose of expired candies in a timely and organized manner.
 
 
 **Design statement**  
