@@ -1,4 +1,5 @@
 # Unit 3 Project: Sofi's Elite Candy Shop
+![candy](https://user-images.githubusercontent.com/100017195/221410724-a3321f80-15a8-4819-a2be-ee8a332b651b.jpeg)
 
 ## Criteria A: Planning
 
@@ -27,12 +28,14 @@ The application also displays a chart of the portion of candy from different com
 
 
 # Criteria B: Design
+## ER diagram
+
+![ER_diagram](https://user-images.githubusercontent.com/100017195/221410587-671849be-f404-4ee2-8cf7-56e5f5f6c96a.jpeg)
+
+**Fig.1** This is the ER diagram showing the relationship between candy table and user table. In the candy table, there are 7 different columns including type, taste, company, number, date_added, and id (shown above) which each column will have the specific data type after the column name. The second table has 4 columns which are username, id, email and password. This diagram also shows that 1 user can have multiple diary. The underlined column name is the primary key which have to be unique and for these 2 tables the primary key will be the id.
 
 ## System Diagram
 
-*Later
-
-**Fig.1** 
 
 ## Data Storage
 
