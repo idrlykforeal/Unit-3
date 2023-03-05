@@ -21,13 +21,16 @@ The application also displays a chart of the portion of candy from different com
 
 1. Application has secure login and registration system
 2. The password for users are secure (hashed).
-3. Users able to view login history
-4. The candy database that stores the inventories records the candy name, company, amount, imported date.
-5. Users able to add, remove candy inventories from the candy database
+3. Users able to view login history。
+4. There will be a candy database that stores the inventories records the candy name, company, amount, taste, and expiration date.
+5. Users able to view, add, remove candy inventories from the candy database.
 6. Users able to view a diagram that showcases the porportion of candy from different companies.
 
 
 # Criteria B: Design
+ and UML diagram for the OOP classes.
+
+
 ## ER diagram
 
 ![er](https://user-images.githubusercontent.com/100017195/222114177-2b34017e-7f74-4826-9dae-1965ea68eb30.jpeg)
@@ -40,15 +43,14 @@ The application also displays a chart of the portion of candy from different com
 ## Data Storage
 
 
-
 ## Wireframe
 
 
 
-## Record of Tasks
-to be added
+
 ## Flow Diagrams
 to be added
+
 ### MVP Program
 
 to be added
@@ -61,6 +63,11 @@ to be added
 
 *Fig.3 **Flow diagram for the main program.**
 
+## Record of Tasks
+to be added
+
+## UML Diagram
+
 ## Test Plan
 
 | Type    | Input | Process | Anticipated Outcome |
@@ -72,9 +79,19 @@ to be added
 
 ## Existing Tools
 
+Tools used in Unit 3
+OOP paradigm
+KivyMD Library
+Relational databases
+SQLite, ORM
+
+structures
+
 | Software/Development Tools | Coding Structure Tools | Libraries |
 | -------------------------- | ---------------------- | --------- |
 | *Insert                    |                        |           |
+
+
 
 ## List of techniques used
 
@@ -93,7 +110,6 @@ to be added
 #### Algorithms
 
 
-
 ## Development
 
 #### OOP
@@ -105,8 +121,6 @@ achievable.
 
 ## Criteria D: Functionality
 
-
-
 ## Demonstration Video
 
-*To be done
+last 30 secs how the code is well organized so that future developers can extend it
