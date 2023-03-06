@@ -69,6 +69,8 @@ to be added
 
 ## UML Diagram
 
+![Blank board](https://user-images.githubusercontent.com/100017195/223025056-40a7479b-b782-4a5c-81eb-f952d6991a11.png)
+
 ## Test Plan
 
 | Type    | Input | Process | Anticipated Outcome |
