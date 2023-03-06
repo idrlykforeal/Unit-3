@@ -41,57 +41,32 @@ The application also displays a chart of the portion of candy from different com
 ## System Diagram
 ![system_diagram_U3_project](https://user-images.githubusercontent.com/100017195/223145333-bf3211e2-a595-4fb0-a6ab-6faaee06cc12.png)
 
-## Data Storage
 
-
-## Wireframe
-
-
+## Wireframe Diagram
 
 
 ## Flow Diagrams
-to be added
+to be added*3
 
-### MVP Program
-
-to be added
-
-
-
-### Main Program
-
-
-
-## Record of Tasks
-to be added
 
 ## UML Diagram
 
 ![Project 3 UML](https://user-images.githubusercontent.com/100017195/223145631-091e178b-5bc9-420d-bb77-fa6085ae5e26.png)
 
-
 ## Test Plan
+Add!!
 
-| Type    | Input | Process | Anticipated Outcome |
-| ------- | ----- | ------- | ------------------- |
-| *Insert |       |         |                     |
-|         |       |         |                     |
+
+## Record of Tasks
+to be added! 
+
 
 # Criteria C: Development
 
+
 ## Existing Tools
 
-Tools used in Unit 3
-OOP paradigm
-KivyMD Library
-Relational databases
-SQLite, ORM
-
-structures
-
-| Software/Development Tools | Coding Structure Tools | Libraries |
-| -------------------------- | ---------------------- | --------- |
-| *Insert                    |                        |           |
+Add
 
 
 
