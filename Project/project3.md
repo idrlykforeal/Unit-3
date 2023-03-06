@@ -39,7 +39,7 @@ The application also displays a chart of the portion of candy from different com
 **Fig.1** This is the ER diagram showing the relationship between candy table and user table. In the candy table, there are 7 different columns including type, taste, company, amount, date_added, and id (shown above) which each column will have the specific data type after the column name. The second table has 4 columns which are username, id, email and password. This diagram also shows that 1 user can have multiple diary. The underlined column name is the primary key which have to be unique and for these 2 tables the primary key will be the id.
 
 ## System Diagram
-
+![system_diagram_U3_project](https://user-images.githubusercontent.com/100017195/223145333-bf3211e2-a595-4fb0-a6ab-6faaee06cc12.png)
 
 ## Data Storage
 
@@ -56,20 +56,19 @@ to be added
 
 to be added
 
-*Fig.2* **Flow diagram for the MVP program.**
+
 
 ### Main Program
 
 
-
-*Fig.3 **Flow diagram for the main program.**
 
 ## Record of Tasks
 to be added
 
 ## UML Diagram
 
-![Blank board](https://user-images.githubusercontent.com/100017195/223025056-40a7479b-b782-4a5c-81eb-f952d6991a11.png)
+![Project 3 UML](https://user-images.githubusercontent.com/100017195/223145631-091e178b-5bc9-420d-bb77-fa6085ae5e26.png)
+
 
 ## Test Plan
 
