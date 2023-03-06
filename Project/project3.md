@@ -25,6 +25,7 @@ The application also displays a chart of the portion of candy from different com
 4. There will be a candy database that stores the inventories records the candy name, company, amount, taste, and expiration date.
 5. Users able to view, add, remove candy inventories from the candy database.
 6. Users able to view a diagram that showcases the porportion of candy from different companies.
+7. Users able to view details of items that are expiring in 5 days.
 
 
 # Criteria B: Design
