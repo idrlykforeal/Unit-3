@@ -147,7 +147,6 @@ The application also displays a chart of the portion of candy from different com
 8. Password Hashing
 9. Interacting with Databases
 10. Arrays and Lists
-11. Text Formatting
 
 ## Computational Thinking
 
@@ -308,6 +307,220 @@ class Candy(Base):
         self.company = company
         self.amount = amount
         self.expiration_date = expiration_date
+```
+### key MD elements used
+
+#### MDBoxLayout, MDButtons
+MDBoxLayout is a general-purpose layout function that is designed to place widgets in a specific configuration. It allows developers to arrange widgets either horizontally or vertically. MDBoxLayout is typically used for organizing multiple widgets, such as buttons, labels, or images, into a logical and consistent layout. Additionally, it is a flexible layout that can be easily customized to fit specific design requirements. 
+MDButtons are different types of buttons which allows users to interact with the app. 
+
+Here is a simple example of how MDBoxLayout and MDButtons are used in the app.
+
+```.kv
+MDBoxLayout:
+            size_hint: 1, .15
+            MDRaisedButton:
+                id: signup
+                text: "Sign up"
+                on_press: root.try_register()
+                size_hint: .3, .8
+                md_bg_color: app.color_2
+
+            MDLabel:
+                size_hint: .3, 1
+
+            MDRaisedButton:
+                id: login
+                text: "Login"
+                on_press: root.try_login()
+                size_hint: .3, .8
+                md_bg_color: app.color_1
+```
+
+#### MDDialog
+MDDialog is a dialog box component in the KivyMD UI toolkit for Python that allows developers to display important information, warnings, or prompts to users. It is highly customizable and supports a variety of input types, including text fields and checkboxes.
+In this app, MDDialog is used as a pop-up message. Example code:
+
+```.py
+self.dialog = MDDialog(title='Candy added',
+                               size_hint=(.8, .2),
+                               buttons=[
+                                   MDFlatButton(text="Ok", on_release=self.dismiss_dialog)
+                               ])
+```
+
+
+
+### MDDatePicker
+MDDatePicker allows users to pick a specific date from a calendar format. With the bind() method, it is able to save the date user picked with another function written when save button is pressed in the pop-up calendar. Here is an example of how it is used in the app.
+
+```.py
+    def show_date_picker(self):
+        date_dialog = MDDatePicker()
+        date_dialog.bind(on_save=self.get_date)
+        date_dialog.open()
+```
+
+#### MDTextField
+MDTextField allows users enter text through a text field space. Here is an example of how it is used in the app.
+
+```.kv
+MDTextField:
+            id: pwd
+            hint_text: "Password:"
+            icon_left:"key"
+            size_hint: 1, .15
+            password: True
+```
+
+# MDTable
+MDTable displays data in a table. In this app, the login history, candy information were all displayed in this form.
+
+```.py
+self.data_table = MDDataTable(
+            size_hint=(.9, 0.6),
+            pos_hint={"center_x": 0.5, "center_y": 0.5},
+            use_pagination=True,
+            check=True, # allow to select rows
+            column_data=[("id", 35), ("Type", 65), ("Taste", 35), ("Company", 45), ("Amount", 35), ("Expiration Date", 55)],
+        )
+        #self.data_table.bind(on_check_press=self.check_pressed)
+        # add the table
+        self.add_widget(self.data_table)
+        self.update()
+```
+
+#### MDDropdownMenu
+MDDropdownMenu was used as a source of input in the app. I used it for the selection of categories that are typical and do not have that much variations. Here is an example where it is used to store the taste of the candy.
+
+```.py
+    def taste_dropdown(self):
+        self.menu_list = [
+            {
+                "viewclass": "OneLineListItem",
+                "text": "Sweet",
+                "on_release": lambda x=f"Sweet": self.set_taste("Sweet"),
+            },
+            {
+                "viewclass": "OneLineListItem",
+                "text": "Sour",
+                "on_release": lambda x=f"Sour": self.set_taste("Sour"),
+            },
+            {
+                "viewclass": "OneLineListItem",
+                "text": "Mixed",
+                "on_release": lambda x=f"Bitter": self.set_taste("Mixed"),
+            }
+        ]
+        self.menu = MDDropdownMenu(
+            caller=self.ids.taste_dropdown,
+            items=self.menu_list,
+            position="auto",
+            width_mult=4,
+        )
+        self.menu.open()
+```
+
+### key functions within the app
+
+#### adding candy data
+
+Here is a method within ManageScreen's adding a candy data into a database with SQL Alchemy.
+
+```.py
+    def add(self):
+        if not self.check_int():
+            self.ids.error.text = "Error in input"
+        else:
+            #get data from input
+            type = self.ids.type.text.title()
+            company = self.ids.company.text.title()
+            amount = self.ids.amount.text
+            expiration = self.expire_date
+            engine = create_engine('sqlite:///db_login.db', echo=True)
+            Base.metadata.create_all(bind=engine)
+            # create a Session
+            Session = sessionmaker(bind=engine)
+            session = Session()
+            # adding new candy
+            new_inventory = Candy(type=type, taste=self.taste, company=company, amount=amount, expiration_date=expiration)
+            session.add(new_inventory)
+            session.commit()
+```
+
+#### validating inputs 
+
+While dealing with user inputs, often we need to validate inputs from users. Here is an example of the validate input methods within the SignupScreen:
+
+```.py
+    def validate_email(self):
+        email = self.ids.email.text
+        if "@" not in email:
+            self.ids.email.error = True
+            self.ids.email.helper_text = "email must contain @"
+        if " " in email:
+            self.ids.email.error = True
+            self.ids.email.helper_text = "email must not contain space"
+    def check_username(self):
+        uname = self.ids.uname.text
+        db = database_worker("db_login.db")
+        query = f"SELECT * FROM users WHERE username = '{uname}'"
+        result = db.search(query)
+        if len(result) != 0:
+            self.ids.uname.error = True
+            self.ids.uname.helper_text = "Username already exists"
+        else:
+            self.ids.uname.error = False
+            self.ids.uname.helper_text = ""
+        #validate: not include space
+        if " " in uname:
+            self.ids.uname.error = True
+            self.ids.uname.helper_text = "Username should not contain space"
+    def check_password_length(self):
+        password = self.ids.pwd.text
+        if len(password) < 5:
+            self.ids.pwd.error = True
+            self.ids.pwd.helper_text = "Password must be at least 5 characters"
+        else:
+            self.ids.pwd.error = False
+            self.ids.pwd.helper_text = ""
+    def confirm_password(self):
+        print("user try register")
+        psw1 = self.ids.pwd.text
+        psw2 = self.ids.pwd_confirm.text
+        if psw2 != psw1:
+            self.ids.pwd_confirm.error = True
+            self.ids.pwd_confirm.helper_text = "Password not match"
+```
+
+#### get expiring items
+In this project, one key function was to display the items that will be expiring in 5 days in the homescreen. Already explained in the Computation Thinking part, where code was shown.
+
+#### plot company pie chart
+n this project, another key function was to display a pie chart of the porportion of companies in the current candy inventory. To realize this, calculation of companies and amounts is needed, which was done by appending companies if they do not already exist in the list, and if they do, only the amounts will be added, and then plotted out with matplotlib. Code below showcases how this is specifically realized.
+
+```.py
+    def company_pie_chart(self):
+        companies=[]
+        amounts=[]
+        db=database_worker('db_login.db')
+        query = f"SELECT * FROM candy"
+        result = db.search(query)
+        for i in result:
+            company=i[3]
+            amount=int(i[4])
+            if company not in companies:
+                print("not in list")
+                companies.append(company)
+                amounts.append(amount)
+            else:
+                print("already in list")
+                amounts[companies.index(company)] += amount
+
+        # graph data into pie chart
+        plt.pie(amounts, labels=companies, autopct='%1.1f%%')
+        plt.title('Candy Companies')
+        plt.show()
 ```
 
 
