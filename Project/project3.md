@@ -32,10 +32,10 @@ The application also displays a chart of the portion of candy from different com
 
 
 ## ER diagram
+![IMG_1ADD4D2801D8-1](https://user-images.githubusercontent.com/100017195/223334871-549f3154-0a1e-4e4b-a381-82fdef3b405f.jpeg)
 
-![er](https://user-images.githubusercontent.com/100017195/222114177-2b34017e-7f74-4826-9dae-1965ea68eb30.jpeg)
 
-**Fig.1** This is the ER diagram showing the relationship between candy table and user table. In the candy table, there are 7 different columns including type, taste, company, amount, date_added, and id (shown above) which each column will have the specific data type after the column name. The second table has 4 columns which are username, id, email and password. This diagram also shows that 1 user can have multiple diary. The underlined column name is the primary key which have to be unique and for these 2 tables the primary key will be the id.
+**Fig.1** This is the ER diagram showing objects in candy table and user table. In the candy table, there are 7 different columns including type, taste, company, amount, date_added, and id (shown above) which each column will have the specific data type after the column name. The second table has 4 columns which are username, id, email and password. This diagram also shows that 1 user can have multiple diary. The underlined column name is the primary key which have to be unique and for these 2 tables the primary key will be the id. The two objects do not have any relations since all the users are able to modify the object database. 
 
 ## System Diagram
 ![system_diagram_U3_project](https://user-images.githubusercontent.com/100017195/223145333-bf3211e2-a595-4fb0-a6ab-6faaee06cc12.png)
