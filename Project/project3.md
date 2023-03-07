@@ -21,7 +21,7 @@ The application also displays a chart of the portion of candy from different com
 
 1. Application has secure login and registration system
 2. The password for users are secure (hashed).
-3. Users able to view login history。
+3. Users able to view login history of all users.
 4. There will be a candy database that stores the inventories records the candy name, company, amount, taste, and expiration date.
 5. Users able to view, add, remove candy inventories from the candy database.
 6. Users able to view a diagram that showcases the porportion of candy from different companies.
@@ -29,7 +29,6 @@ The application also displays a chart of the portion of candy from different com
 
 
 # Criteria B: Design
- and UML diagram for the OOP classes.
 
 
 ## ER diagram
@@ -43,6 +42,7 @@ The application also displays a chart of the portion of candy from different com
 
 
 ## Wireframe Diagram
+![wiafram](https://user-images.githubusercontent.com/100017195/223319608-d2a6ea07-90b5-477b-b0c3-d032cc49e098.jpeg)
 
 
 ## Flow Diagrams
@@ -100,4 +100,5 @@ achievable.
 
 ## Demonstration Video
 
+4 mins
 last 30 secs how the code is well organized so that future developers can extend it
