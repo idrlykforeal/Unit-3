@@ -39,19 +39,32 @@ The application also displays a chart of the portion of candy from different com
 
 ## System Diagram
 ![system_diagram_U3_project](https://user-images.githubusercontent.com/100017195/223145333-bf3211e2-a595-4fb0-a6ab-6faaee06cc12.png)
-
+**Fig 2** shows the system diagram from the input(keyboard) to the output which includes different systems being used in this project such as version of coding language(python and KivyMD) and application(PyCharm), computer version and detail(Processor,version, memory, etc.), module and database and the output screen(application interface on the computer screen).
 
 ## Wireframe Diagram
 ![wiafram](https://user-images.githubusercontent.com/100017195/223319608-d2a6ea07-90b5-477b-b0c3-d032cc49e098.jpeg)
-
+**Fig 3** shows the wireframe diagram or a prototype of the application's GUI. In this diagram, different screen that will be in the application will be put with different buttons. Arrows from one button to screen show which screen the button will open when it is pressed and released.
 
 ## Flow Diagrams
-to be added*3
 
+### Login
+![Flow chart Login](https://user-images.githubusercontent.com/100017195/223455727-9a1d1c98-66ce-45c5-9b22-882a481d55c4.jpeg)
+**Fig 4** shows the flow diagram for the method of try_login which validates the username and password and logs in the user if the data is correct.
+
+
+### Update Homescreen Expiring-soon Table
+![flow-homescreeen_update](https://user-images.githubusercontent.com/100017195/223455903-7625307c-ccf0-458f-b97a-9430aafc1c3a.jpeg)
+**Fig 5** shows the flow diagram for getting candy informaton from the database puts all items expiring in 5 days into another list, and displays them.
+
+### Add item
+![Flow chart add item](https://user-images.githubusercontent.com/100017195/223455958-a8d6558c-4768-4c4c-845a-69d4eaeab32e.jpeg)
+**Fig 6** shows the flow diagram for adding an item of candy to the database.
 
 ## UML Diagram
 
 ![Project 3 UML](https://user-images.githubusercontent.com/100017195/223145631-091e178b-5bc9-420d-bb77-fa6085ae5e26.png)
+**Fig 7** This shows the UML diagram for the all the classes use in this project with methods in each class. There are 2 main parents class which are MDScreen and MDApp which all the other class inherited methods and attributes from them. The inheritance is shown by the arrow.
+
 
 ## Test Plan
 Add!!
