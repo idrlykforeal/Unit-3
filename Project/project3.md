@@ -127,11 +127,12 @@ The application also displays a chart of the portion of candy from different com
 
 | Software/Development Tools | Coding Structure Tools          | Libraries      |
 |----------------------------|---------------------------------|----------------|
-| OOP paradigm               | for loops                       | KivyMD Library |
+| PyCharm                    | for loops                       | KivyMD Library |
 | Relational databases       | Objects, attributes and methods | sqlite3        |
-| SQLite, ORM                |                                 | matplotlib     |
-| Python                     |                                 | sqlalchemy     |
-| Kv                         |                                 |                |
+| SQLite, ORM                | OOP structures (classes)        | matplotlib     |
+| Python                     | Encryption                      | sqlalchemy     |
+| KivyMD                     | if statements                   | datetime       |
+| ChatGPT                    | ORM(Object Relation Mapping)    |                |
 
 
 ## List of techniques used
