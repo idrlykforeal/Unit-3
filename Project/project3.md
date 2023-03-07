@@ -351,7 +351,7 @@ self.dialog = MDDialog(title='Candy added',
 
 
 
-### MDDatePicker
+#### MDDatePicker
 MDDatePicker allows users to pick a specific date from a calendar format. With the bind() method, it is able to save the date user picked with another function written when save button is pressed in the pop-up calendar. Here is an example of how it is used in the app.
 
 ```.py
@@ -373,7 +373,7 @@ MDTextField:
             password: True
 ```
 
-# MDTable
+#### MDTable
 MDTable displays data in a table. In this app, the login history, candy information were all displayed in this form.
 
 ```.py
