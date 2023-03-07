@@ -4,7 +4,7 @@
 ## Criteria A: Planning
 
 ## Problem definition(Client identification)
-Sofi is planning to open an elite candy shop and is in need of a professional inventory management platform. The platform must be secure and allow multiple worker accounts to update the candy inventory. Additionally, the platform should include the functionality to view charts that display portions of candies from different companies.
+Sofi is planning to open an elite candy shop and is in need of a professional inventory management platform. The platform must be secure and allow multiple worker accounts to update the candy inventory. All the employees should be able to create a unique account, and able to login to the platform and update the inventory details for the sales of the company. Additionally, the platform should include the functionality to view charts that display portions of candies from different companies to check which company is occupying the most stock in the candy shop in order to work together with external investments.
 
 ## Proposed Solution
 An appropriate solution would include a localized computer application with a GUI (Graphical User Interface) that can save data into a database, taking the client's requirements into consideration. Python is a suitable programming language for the solution since it is open source, established, and supported across several platforms, including macOS, Windows, and Linux. SQLite would be a suitable option for the database because it is an embedded, serverless relational database, allowing both the software and the database to be translated.
