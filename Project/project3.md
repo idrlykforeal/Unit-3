@@ -310,6 +310,28 @@ class Candy(Base):
 ```
 ### key KivyMD elements used
 
+#### MDScreen
+MDScreen creates different screens inside applications. The different screens can be managed by the ScreenManager in kivy md. The examples of MDScreens and MDScreen manager is shown below:
+
+```.kv
+ScreenManager:
+    LoginScreen:
+        name:"LoginScreen"
+    SignupScreen:
+        name: "SignupScreen"
+    HomeScreen:
+        name: "HomeScreen"
+    LoginHistory:
+        name: "LoginHistory"
+    Manage:
+        name: "Manage"
+    InventoryScreen:
+        name: "InventoryScreen"
+<LoginScreen>:
+    size: 500,500
+```
+
+
 #### MDBoxLayout, MDButtons
 MDBoxLayout is a general-purpose layout function that is designed to place widgets in a specific configuration. It allows developers to arrange widgets either horizontally or vertically. MDBoxLayout is typically used for organizing multiple widgets, such as buttons, labels, or images, into a logical and consistent layout. Additionally, it is a flexible layout that can be easily customized to fit specific design requirements. 
 MDButtons are different types of buttons which allows users to interact with the app. 
