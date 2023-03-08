@@ -550,5 +550,4 @@ n this project, another key function was to display a pie chart of the porportio
 
 ## Demonstration Video
 
-4 mins
-last 30 secs how the code is well organized so that future developers can extend it
+https://youtu.be/BxPUd1xI8XM 
