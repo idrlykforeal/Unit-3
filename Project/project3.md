@@ -1,7 +1,7 @@
 # Unit 3 Project: Sofi's Elite Candy Shop
 ![candy](https://user-images.githubusercontent.com/100017195/221410724-a3321f80-15a8-4819-a2be-ee8a332b651b.jpeg)
 
-## Criteria A: Planning
+# Criteria A: Planning
 
 ## Problem definition(Client identification)
 Sofi is planning to open an elite candy shop and is in need of a professional inventory management platform. The platform must be secure and allow multiple worker accounts to update the candy inventory. All the employees should be able to create a unique account, and able to login to the platform and update the inventory details for the sales of the company. Additionally, the platform should include the functionality to view charts that display portions of candies from different companies to check which company is occupying the most stock in the candy shop in order to work together with external investments.
@@ -546,12 +546,12 @@ n this project, another key function was to display a pie chart of the porportio
 ```
 
 
-## Criteria D: Functionality
+# Criteria D: Functionality
 
-### Demonstration Video
+## Demonstration Video
 
 https://youtu.be/BxPUd1xI8XM 
 
-## Appendix
-### client approval
+# Appendix
+## client approval
 <img width="1149" alt="image" src="https://user-images.githubusercontent.com/100017195/223878992-725fc7fb-5074-44d0-a38e-fd720f2ce45e.png">
