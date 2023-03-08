@@ -308,7 +308,7 @@ class Candy(Base):
         self.amount = amount
         self.expiration_date = expiration_date
 ```
-### key MD elements used
+### key KivyMD elements used
 
 #### MDBoxLayout, MDButtons
 MDBoxLayout is a general-purpose layout function that is designed to place widgets in a specific configuration. It allows developers to arrange widgets either horizontally or vertically. MDBoxLayout is typically used for organizing multiple widgets, such as buttons, labels, or images, into a logical and consistent layout. Additionally, it is a flexible layout that can be easily customized to fit specific design requirements. 
