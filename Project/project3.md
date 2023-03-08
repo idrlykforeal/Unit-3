@@ -546,8 +546,12 @@ n this project, another key function was to display a pie chart of the porportio
 ```
 
 
-# Criteria D: Functionality
+## Criteria D: Functionality
 
-## Demonstration Video
+### Demonstration Video
 
 https://youtu.be/BxPUd1xI8XM 
+
+## Appendix
+### client approval
+<img width="1149" alt="image" src="https://user-images.githubusercontent.com/100017195/223878992-725fc7fb-5074-44d0-a38e-fd720f2ce45e.png">
