@@ -555,3 +555,5 @@ https://youtu.be/BxPUd1xI8XM
 # Appendix
 ## client approval
 <img width="1149" alt="image" src="https://user-images.githubusercontent.com/100017195/223878992-725fc7fb-5074-44d0-a38e-fd720f2ce45e.png">
+## client feedback on final product
+<img width="1072" alt="image" src="https://user-images.githubusercontent.com/100017195/223881381-26dc928d-8c89-411c-8bc9-d7e128bc36ba.png">
