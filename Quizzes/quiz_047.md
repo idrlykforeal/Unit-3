@@ -1,42 +1,9 @@
 # python
 
+## update
+
 ```.py
-import sqlite3
-
-from kivymd.app import MDApp
-from secure_password import *
-from secure_password import encrypt_pswd
-
-class database_worker:
-    def __init__(self, name):
-        self.connection = sqlite3.connect(name)
-        self.cursor = self.connection.cursor()
-
-    def search(self, query):
-        result = self.cursor.execute(query).fetchall()
-        return result
-
-    def run_save(self, query):
-        self.cursor.execute(query)
-        self.connection.commit()
-
-    def close(self):
-        self.connection.close()
-
-
-class quiz047(MDApp):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.components = {"basic":0}
-        self.hash = ""
-
-    def build(self):
-        return
-
-#    def save(self):
-#        pass
-
-    def update(self):
+def update(self):
 
         #This function updates all the labels in the form using the base salary and the percentage
         # Pseudocode
@@ -64,23 +31,12 @@ class quiz047(MDApp):
             hashed = encrypt_pswd(hash)
             self.hash = hashed
             self.root.ids.hash.text = hashed[-50:]
+```
 
-        # 3- for Each TextField with ids: "inhabitant","income_tax","pension","health" get the text property
-        # 4- if the TextField.text has a number (value), calculate the equation new_value="(base*int(value)//100) JPY" and subbctract the equation to the total
-        # 5- if no: then new_value = " JPY"
-        # 6- set the label next to the TextField (inhabitant_label, income_tax_label, etc) to the variable new_value
-        # 7- concatenate to the hash variable the f"{id}{value}"
-        # 8- set the text of the element id=total to the total with the JPY symbol
-        # 9- encrypt the hash and change the text of the label with id=hash to the last 50 characters of the hash
+## save
 
-        #calculate total
-
-
-        # update the percentage
-
-
-
-    def save(self):
+```.py
+def save(self):
         def save(self):
             base_widget = self.root.ids.base
             base = base_widget.text.strip()
@@ -106,15 +62,12 @@ class quiz047(MDApp):
                 db.close()
         self.root.ids.hash.text = f"Payment saved"
 
-    def clear(self):
-        for label in ["base", "inhabitant","income_tax","pension","health"]:
-            self.root.ids[label].text = ""
-            self.root.ids[label+"_label"].text = " JPY"
+```
 
-        self.root.ids["salary_label"].text = " JPY"
-        self.root.ids.hash.text = "----"
+## checking hashed transactions (HL)
 
-    def check(self):
+```.py
+def check(self):
         conn = sqlite3.connect('payments.db')
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM payments")
@@ -126,11 +79,8 @@ class quiz047(MDApp):
                 print("OK")
             else:
                 print(f"Error in id: {row[0]}")
-
-test = quiz047()
-
-test.run()
 ```
+
 
 # evidence
 
