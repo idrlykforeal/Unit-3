@@ -118,6 +118,7 @@ The application also displays a chart of the portion of candy from different com
 |      34 | upload and justify critera C                     | upload and justify critera C                                                                                      | 2 h           |         March 8 | C         |
 |      35 | video timestamp planning                         | video timestamp planning                                                                                          | 1 h           |         March 8 | D         |
 |      36 | video record and upload                          | video record and upload                                                                                           | 45 mins       |         March 8 | D         |
+|      37 | feedback from client      | showing client final product, and got final feedback and satisfication from the client                               | 15 mins       |         March 9 | A/appendix         |
 
 
 # Criteria C: Development
